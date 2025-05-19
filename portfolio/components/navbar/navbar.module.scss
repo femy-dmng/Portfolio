@@ -1,0 +1,12 @@
+@use '@/styles/variables' as *;
+.navbar{
+    background-color: $background-color-primary;
+    color: $text-color-light;
+
+    .list{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        list-style: none;
+    }
+}
