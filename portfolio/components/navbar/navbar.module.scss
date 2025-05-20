@@ -1,12 +1,22 @@
-@use '@/styles/variables' as *;
-.navbar{
-    background-color: $background-color-primary;
-    color: $text-color-light;
+@use "@/styles/variables" as *;
+.navbar {
+  background-color: $background-color-primary;
+  color: $text-color-light;
 
-    .list{
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        list-style: none;
+  .list {
+    display: flex;
+    flex-direction: row;
+    gap: $gap;
+    list-style: none;
+    font-family: $font-secondary;
+
+    a {
+      color: $text-color-light;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-hover;
+      }
     }
+  }
 }
