@@ -9,24 +9,31 @@ export default function footer() {
     <footer className={style.footer}>
       <ul className={style.listfooter}>
         <li>
-          <Image
-            className={style.logo}
-            src={logoGitHub}
-            alt="GitHub"
-            width={40}
-            height={40}
-          />
-          GitHub
+          <Link href="https://github.com/femy-dmng" target="_blank">
+            <Image
+              className={style.logo}
+              src={logoGitHub}
+              alt="GitHub"
+              width={40}
+              height={40}
+            />
+            GitHub{" "}
+          </Link>
         </li>
         <li>
-          <Image
-            className={style.logo}
-            src={logoLinkedIn}
-            alt="LinkedIn"
-            width={40}
-            height={40}
-          />
-          LinkedIn
+          <Link
+            href="https://www.linkedin.com/in/femy-domingo/"
+            target="_blank"
+          >
+            <Image
+              className={style.logo}
+              src={logoLinkedIn}
+              alt="LinkedIn"
+              width={40}
+              height={40}
+            />
+            LinkedIn
+          </Link>
         </li>
         <li>
           <Link href="/contact">Contact</Link>
