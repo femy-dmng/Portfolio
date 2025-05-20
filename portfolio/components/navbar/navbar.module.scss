@@ -3,22 +3,25 @@
   background-color: $background-color-primary;
   color: $text-color-light;
   height: 55px;
-  align-items: center;
 
   .list {
     display: flex;
-    flex-direction: row;
     gap: $gap;
     list-style: none;
     font-family: $font-secondary;
+    margin: 0;
+    align-items: center;
+    height: 100%;
 
     img {
       border-radius: 20px;
+      vertical-align: middle;
     }
 
     a {
       color: $text-color-light;
       text-decoration: none;
+      font-size: $navbar-title-font-size;
 
       &:hover {
         color: $color-hover;
