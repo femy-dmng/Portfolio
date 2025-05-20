@@ -7,11 +7,11 @@ import Link from "next/link";
 export default function footer() {
   return (
     <footer className={style.footer}>
-      <ul>
-        <li>
+      <ul className={style.listfooter}>
+        <li className={style.logo}>
           <Image src={logoGitHub} alt="GitHub" width={40} height={40} /> GitHub
         </li>
-        <li>
+        <li className={style.logo}>
           <Image src={logoLinkedIn} alt="LinkedIn" width={40} height={40} />{" "}
           LinkedIn
         </li>

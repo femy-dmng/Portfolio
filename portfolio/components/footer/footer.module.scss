@@ -2,4 +2,22 @@
 .footer {
   background-color: $background-color-tertiary;
   color: $text-color-light;
+
+  .listfooter {
+    list-style: none;
+    font-family: $font-secondary;
+
+    .logo {
+      gap: $gap;
+    }
+
+    a {
+      color: $text-color-light;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-hover;
+      }
+    }
+  }
 }

@@ -1,11 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bayon&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cousine:400,700&display=swap");
+
 //Couleurs
-$background-color-primary: #FF70BC;
-$background-color-secondary: #FFFFFF;
-$background-color-tertiary: #4A4747;
-$text-color-light:#FFFFFF;
+$background-color-primary: #ff70bc;
+$background-color-secondary: #ffffff;
+$background-color-tertiary: #4a4747;
+$text-color-light: #ffffff;
 $text-color-dark: #000000;
+$text-color-medium: #ff70bc;
+$color-hover: #f1bed9;
 
 //Espacements
-
+$gap: 20px;
 
 //Taille de texte
+
+//Police
+$font-primary: "Kalnia", serif;
+$font-secondary: "Bayon", sans-serif;
+$font-tertiary: "Cousine", monospace;
