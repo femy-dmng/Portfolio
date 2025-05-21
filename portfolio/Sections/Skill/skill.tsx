@@ -2,7 +2,7 @@ import styles from "./skill.module.scss";
 import Image from "next/image";
 
 // Logos
-import logoC from "@/assets/skill logo/C++ Logo.webp";
+import logoC from "@/assets/skill logo/C++ Logo.png";
 import logoJava from "@/assets/skill logo/Java Logo.webp";
 import logoJS from "@/assets/skill logo/js.png";
 import logoHTML from "@/assets/skill logo/html logo.webp";
