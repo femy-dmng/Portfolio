@@ -4,12 +4,12 @@ import Image from "next/image";
 // Logos
 import logoC from "@/assets/skill logo/C++ Logo.webp";
 import logoJava from "@/assets/skill logo/Java Logo.webp";
-import logoJS from "@/assets/skill logo/JS logo.webp";
+import logoJS from "@/assets/skill logo/js.png";
 import logoHTML from "@/assets/skill logo/html logo.webp";
 import logoSQL from "@/assets/skill logo/mysql logo.webp";
 import logoReact from "@/assets/skill logo/React logo.png";
 import logoGit from "@/assets/skill logo/git.png";
-import logoVSCode from "@/assets/skill logo/vscode.jpeg";
+import logoVSCode from "@/assets/skill logo/vscode.png";
 import logoNext from "@/assets/skill logo/next.png";
 
 export default function Skill() {
@@ -23,37 +23,37 @@ export default function Skill() {
             <div className={styles.skillLine}>
               <p className={styles.categoryTitle}>web :</p>
               <div className={styles.logoRow}>
-                <Image src={logoHTML} alt="HTML" width={20} height={20} />
-                <Image src={logoJS} alt="JS" width={20} height={20} />
-                <Image src={logoReact} alt="React" width={20} height={20} />
-                <Image src={logoNext} alt="Next" width={20} height={20} />
+                <Image src={logoHTML} alt="HTML" width={40} height={40} />
+                <Image src={logoJS} alt="JS" width={40} height={40} />
+                <Image src={logoReact} alt="React" width={40} height={40} />
+                <Image src={logoNext} alt="Next" width={40} height={40} />
               </div>
             </div>
 
             <div className={styles.skillLine}>
               <p className={styles.categoryTitle}>logiciel:</p>
               <div className={styles.logoRow}>
-                <Image src={logoC} alt="C/C++" width={20} height={20} />
-                <Image src={logoJava} alt="Java" width={20} height={20} />
+                <Image src={logoC} alt="C/C++" width={40} height={40} />
+                <Image src={logoJava} alt="Java" width={40} height={40} />
               </div>
             </div>
 
             <div className={styles.skillLine}>
               <p className={styles.categoryTitle}>BDD:</p>
               <div className={styles.logoRow}>
-                <Image src={logoSQL} alt="SQL" width={20} height={20} />
+                <Image src={logoSQL} alt="SQL" width={40} height={40} />
               </div>
             </div>
 
             <div className={styles.skillLine}>
               <p className={styles.categoryTitle}>design:</p>
               <div className={styles.logoRow}>
-                <Image src={logoJS} alt="Placeholder" width={20} height={20} />
+                <Image src={logoJS} alt="Placeholder" width={40} height={40} />
                 <Image
                   src={logoReact}
                   alt="Placeholder"
-                  width={20}
-                  height={20}
+                  width={40}
+                  height={40}
                 />
               </div>
             </div>
@@ -61,8 +61,8 @@ export default function Skill() {
             <div className={styles.skillLine}>
               <p className={styles.categoryTitle}>autre:</p>
               <div className={styles.logoRow}>
-                <Image src={logoGit} alt="Git" width={20} height={20} />
-                <Image src={logoVSCode} alt="VSCode" width={20} height={20} />
+                <Image src={logoGit} alt="Git" width={40} height={40} />
+                <Image src={logoVSCode} alt="VSCode" width={40} height={40} />
               </div>
             </div>
           </div>
