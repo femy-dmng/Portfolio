@@ -1,6 +1,8 @@
 @use "@/styles/variables" as *;
 
 .herobanner {
+  padding: 0 1em 0 0;
+  margin-bottom: 140px;
   h1 {
     color: $text-color-dark;
     font-family: $font-primary;

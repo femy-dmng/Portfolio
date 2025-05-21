@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "./hero-banner.module.scss";
 import lou from "@/assets/louu.jpg";
-import Skill from "@/Sections/Skill/skill";
 
 export default function Herobanner() {
   return (
@@ -25,8 +24,6 @@ export default function Herobanner() {
           <Image src={lou} alt="photo lou" width={370} height={370} />
         </div>
       </div>
-
-      <Skill />
     </section>
   );
 }
