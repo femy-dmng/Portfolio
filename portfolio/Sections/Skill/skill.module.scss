@@ -1,0 +1,50 @@
+@use "@/styles/variables" as *;
+
+.skill {
+  background-color: $background-color-primary;
+  width: 30rem;
+  height: 23rem;
+  padding-left: 2rem;
+  margin-left: 5em;
+  position: absolute;
+
+  .title {
+    color: $text-color-light;
+    font-family: $font-primary;
+    font-size: 5.5rem;
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+  li {
+    color: $text-color-dark;
+    font-family: $font-tertiary;
+    font-size: 2rem;
+    margin-top: 0em;
+  }
+}
+
+.section {
+  background-color: $background-color-tertiary;
+  .t {
+    display: flex;
+    align-items: left;
+    .IT {
+      font-family: $font-secondary;
+      font-size: 15rem;
+      color: $text-color-light;
+      margin: 0;
+    }
+    .student {
+      font-family: $font-primary;
+      font-size: 8rem;
+      color: $text-color-medium;
+      margin: 0;
+    }
+  }
+
+  .para {
+    font-family: $font-tertiary;
+    font-size: $font-size-paragraphe;
+    color: $text-color-light;
+  }
+}
