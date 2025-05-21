@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    gap: 4rem; // espace entre le bloc skill et le h2 + texte
+    gap: 4rem;
 
     h2 {
       font-family: $font-primary;
@@ -58,7 +58,6 @@
     border-radius: 4px;
     position: relative;
     top: -5em;
-    padding-bottom: 5em;
 
     .title {
       color: $text-color-light;
@@ -72,14 +71,14 @@
     .skillContent {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 1.5rem;
       width: 100%;
     }
 
     .skillLine {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
+      gap: 1rem;
       width: 100%;
     }
 
@@ -88,22 +87,66 @@
       font-family: $font-tertiary;
       color: $text-color-dark;
       margin: 0;
-      flex: 1;
-      text-transform: lowercase;
+      width: 6rem;
+      text-transform: uppercase;
+      font-weight: bold;
     }
 
     .logoRow {
       display: flex;
-      gap: 0.7rem;
-      flex-wrap: wrap;
-      flex: 2;
+      flex-direction: column; // Aligne les logos en colonne
+      gap: 0.6rem;
+      flex: 1;
+      align-items: flex-start;
 
-      img {
+      .logoWrapper {
+        position: relative;
         width: 45px;
         height: 45px;
-        border-radius: 5%;
-        background-color: rgba($background-color-secondary, 0.6);
-        padding: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        overflow: visible;
+        border-radius: 10%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          transition: all 0.3s ease;
+          border-radius: 10%;
+          z-index: 1;
+        }
+
+        .techName {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 0.85rem;
+          font-weight: bold;
+          font-family: $font-tertiary;
+          color: $text-color-light;
+          background-color: rgba(0, 0, 0, 0.7);
+          padding: 4px 6px;
+          border-radius: 6px;
+          white-space: nowrap;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          z-index: 2;
+        }
+
+        &:hover {
+          img {
+            filter: blur(3px) brightness(1.1);
+            transform: scale(1.05);
+          }
+
+          .techName {
+            opacity: 1;
+          }
+        }
       }
     }
   }

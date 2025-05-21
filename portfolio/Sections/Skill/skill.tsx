@@ -11,6 +11,7 @@ import logoReact from "@/assets/skill logo/React logo.png";
 import logoGit from "@/assets/skill logo/git.png";
 import logoVSCode from "@/assets/skill logo/vscode.png";
 import logoNext from "@/assets/skill logo/next.png";
+import SkillItem from "@/components/skill/skillItem";
 
 export default function Skill() {
   return (
@@ -22,48 +23,70 @@ export default function Skill() {
           <div className={styles.skillContent}>
             <div className={styles.skillLine}>
               <p className={styles.categoryTitle}>web :</p>
-              <div className={styles.logoRow}>
-                <Image src={logoHTML} alt="HTML" width={40} height={40} />
-                <Image src={logoJS} alt="JS" width={40} height={40} />
-                <Image src={logoReact} alt="React" width={40} height={40} />
-                <Image src={logoNext} alt="Next" width={40} height={40} />
-              </div>
+              <SkillItem
+                image={logoHTML}
+                description="logo HTML"
+                label="HTML"
+              />
+              <SkillItem
+                image={logoJS}
+                description="logo JS"
+                label="JavaScript"
+              />
+              <SkillItem
+                image={logoReact}
+                description="logo React"
+                label="React"
+              />
+              <SkillItem
+                image={logoNext}
+                description="logo Next"
+                label="Next.js"
+              />
+              <div className={styles.logoRow}></div>
             </div>
 
             <div className={styles.skillLine}>
               <p className={styles.categoryTitle}>logiciel:</p>
-              <div className={styles.logoRow}>
-                <Image src={logoC} alt="C/C++" width={40} height={40} />
-                <Image src={logoJava} alt="Java" width={40} height={40} />
-              </div>
+              <SkillItem image={logoC} description="logo C++" label="C++" />
+              <SkillItem
+                image={logoJava}
+                description="logo Java"
+                label="Java"
+              />
+              <div className={styles.logoRow}></div>
             </div>
 
             <div className={styles.skillLine}>
               <p className={styles.categoryTitle}>BDD:</p>
-              <div className={styles.logoRow}>
-                <Image src={logoSQL} alt="SQL" width={40} height={40} />
-              </div>
+              <SkillItem image={logoSQL} description="logo SQL" label="SQL" />
+              <div className={styles.logoRow}></div>
             </div>
 
             <div className={styles.skillLine}>
               <p className={styles.categoryTitle}>design:</p>
-              <div className={styles.logoRow}>
-                <Image src={logoJS} alt="Placeholder" width={40} height={40} />
-                <Image
-                  src={logoReact}
-                  alt="Placeholder"
-                  width={40}
-                  height={40}
-                />
-              </div>
+              <SkillItem
+                image={logoJS}
+                description="logo JS"
+                label="JavaScript"
+              />
+              <SkillItem
+                image={logoReact}
+                description="logo React"
+                label="React"
+              />
+              <div className={styles.logoRow}></div>
             </div>
 
             <div className={styles.skillLine}>
               <p className={styles.categoryTitle}>autre:</p>
-              <div className={styles.logoRow}>
-                <Image src={logoGit} alt="Git" width={40} height={40} />
-                <Image src={logoVSCode} alt="VSCode" width={40} height={40} />
-              </div>
+              <SkillItem image={logoGit} description="logo Git" label="Git" />
+              <SkillItem
+                image={logoVSCode}
+                description="logo VSCode"
+                label="VSCode"
+              />
+              <div className={styles.logoRow}></div>
             </div>
           </div>
         </div>
