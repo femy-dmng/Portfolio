@@ -2,7 +2,7 @@ import styles from "./skill.module.scss";
 
 export default function Skill() {
   return (
-    <section className={styles.sectionContainer}>
+    <section id="skill-section" className={styles.sectionContainer}>
       <div className={styles.studentHeader}>
         <div className={styles.skill}>
           <p className={styles.title}>Skills</p>
