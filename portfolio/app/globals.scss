@@ -1,9 +1,14 @@
-/* globals.scss */
+@use "@/styles/variables" as *;
+
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%; // nécessaire
+}
+
+main {
+  padding: 0 1em 0 0em;
 }
 
 .layout {

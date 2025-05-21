@@ -1,8 +1,11 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Herobanner from "@/Sections/hero-banner/hero-banner";
+import Skill from "@/Sections/Skill/skill";
 
 export default function Home() {
   return (
-    <div>Mon Portfolio</div>
+    <>
+      <Herobanner />
+      <Skill />
+    </>
   );
 }

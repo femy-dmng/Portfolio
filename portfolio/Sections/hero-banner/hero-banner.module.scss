@@ -1,0 +1,51 @@
+@use "@/styles/variables" as *;
+
+.herobanner {
+  h1 {
+    color: $text-color-dark;
+    font-family: $font-primary;
+    font-size: 7rem;
+    font-weight: 500;
+    margin: 0;
+    padding-left: 0.1em;
+  }
+
+  h2 {
+    color: $text-color-medium;
+    font-family: $font-secondary;
+    font-size: 7rem;
+    font-weight: 100;
+    margin: 0;
+    padding-left: 0.2em;
+    line-height: 0.8em;
+  }
+
+  .presentation {
+    display: inline-flex;
+    justify-content: space-between;
+
+    p {
+      margin-top: 3.5em;
+      font-family: $font-tertiary;
+      font-size: 1.8em;
+      position: relative;
+      padding-left: 1.5em;
+    }
+
+    .back {
+      margin-top: -0.4em;
+      padding: 0;
+      color: lighten($text-color-medium, 22%);
+      position: absolute;
+      font-size: 20.5em;
+      font-family: $font-backgroung-primary;
+      z-index: -2;
+    }
+
+    img {
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10em;
+    }
+  }
+}
