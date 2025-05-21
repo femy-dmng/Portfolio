@@ -1,11 +1,16 @@
 import styles from "./skill.module.scss";
 import Image from "next/image";
-import logoc from "@/assets/skill logo/C++ Logo.webp";
-import logojava from "@/assets/skill logo/Java Logo.webp";
-import logojs from "@/assets/skill logo/JS logo.webp";
-import logohtml from "@/assets/skill logo/html logo.webp";
-import logosql from "@/assets/skill logo/mysql logo.webp";
-import logoreact from "@/assets/skill logo/React logo.png";
+
+// Logos
+import logoC from "@/assets/skill logo/C++ Logo.webp";
+import logoJava from "@/assets/skill logo/Java Logo.webp";
+import logoJS from "@/assets/skill logo/JS logo.webp";
+import logoHTML from "@/assets/skill logo/html logo.webp";
+import logoSQL from "@/assets/skill logo/mysql logo.webp";
+import logoReact from "@/assets/skill logo/React logo.png";
+import logoGit from "@/assets/skill logo/git.png";
+import logoVSCode from "@/assets/skill logo/vscode.jpeg";
+import logoNext from "@/assets/skill logo/next.png";
 
 export default function Skill() {
   return (
@@ -13,44 +18,66 @@ export default function Skill() {
       <div className={styles.studentHeader}>
         <div className={styles.skill}>
           <p className={styles.title}>Skills</p>
-          <ul className={styles.skillist}>
-            <li>
-              <Image src={logoc} alt="LogoC" width={35} height={35} />
-              C, C++
-            </li>
-            <li>
-              <Image src={logojava} alt="LogoJava" width={35} height={35} />
-              JAVA
-            </li>
-            <li>
-              <Image src={logojs} alt="LogoJS" width={35} height={35} />
-              JAVASCRIPT
-            </li>
-            <li>
-              <Image src={logohtml} alt="Logohtml" width={35} height={35} />
-              HTML, CSS
-            </li>
-            <li>
-              <Image src={logosql} alt="LogoSQL" width={35} height={35} />
-              SQL
-            </li>
-            <li>
-              <Image src={logoreact} alt="LogoReact" width={35} height={35} />
-              REACT
-            </li>
-          </ul>
-        </div>
-        <h2>
-          <span className={styles.IT}>IT</span>Student
-        </h2>
-      </div>
 
-      <p className={styles.para}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
+          <div className={styles.skillContent}>
+            <div className={styles.skillLine}>
+              <p className={styles.categoryTitle}>web :</p>
+              <div className={styles.logoRow}>
+                <Image src={logoHTML} alt="HTML" width={20} height={20} />
+                <Image src={logoJS} alt="JS" width={20} height={20} />
+                <Image src={logoReact} alt="React" width={20} height={20} />
+                <Image src={logoNext} alt="Next" width={20} height={20} />
+              </div>
+            </div>
+
+            <div className={styles.skillLine}>
+              <p className={styles.categoryTitle}>logiciel:</p>
+              <div className={styles.logoRow}>
+                <Image src={logoC} alt="C/C++" width={20} height={20} />
+                <Image src={logoJava} alt="Java" width={20} height={20} />
+              </div>
+            </div>
+
+            <div className={styles.skillLine}>
+              <p className={styles.categoryTitle}>BDD:</p>
+              <div className={styles.logoRow}>
+                <Image src={logoSQL} alt="SQL" width={20} height={20} />
+              </div>
+            </div>
+
+            <div className={styles.skillLine}>
+              <p className={styles.categoryTitle}>design:</p>
+              <div className={styles.logoRow}>
+                <Image src={logoJS} alt="Placeholder" width={20} height={20} />
+                <Image
+                  src={logoReact}
+                  alt="Placeholder"
+                  width={20}
+                  height={20}
+                />
+              </div>
+            </div>
+
+            <div className={styles.skillLine}>
+              <p className={styles.categoryTitle}>autre:</p>
+              <div className={styles.logoRow}>
+                <Image src={logoGit} alt="Git" width={20} height={20} />
+                <Image src={logoVSCode} alt="VSCode" width={20} height={20} />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.studentText}>
+          <h2>
+            <span className={styles.IT}>IT</span>student
+          </h2>
+          <p className={styles.para}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua...
+          </p>
+        </div>
+      </div>
     </section>
   );
 }
