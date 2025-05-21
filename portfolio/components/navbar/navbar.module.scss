@@ -2,7 +2,7 @@
 .navbar {
   background-color: $background-color-primary;
   color: $text-color-light;
-  height: 55px;
+  //height: 80px;
 
   .list {
     display: flex;
@@ -11,8 +11,8 @@
     font-family: $font-secondary;
     margin: 0;
     align-items: center;
-    height: 100%;
-    margin-left: 10px;
+    height: 4.5rem;
+    padding-left: 25;
 
     img {
       border-radius: 20px;

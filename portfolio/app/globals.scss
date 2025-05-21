@@ -1,10 +1,14 @@
 @use "@/styles/variables" as *;
-/* globals.scss */
+
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%; // nécessaire
+}
+
+main {
+  padding: 0 1em 0 0em;
 }
 
 .layout {
@@ -15,19 +19,4 @@ body {
 
 .content {
   flex: 1; // ← le main prend tout l’espace entre navbar et footer
-}
-
-.presentation {
-  h1 {
-    font-family: $font-primary;
-  }
-
-  h2 {
-    color: $text-color-medium;
-    font-family: $font-secondary;
-  }
-
-  p {
-    font-family: $font-tertiary;
-  }
 }
