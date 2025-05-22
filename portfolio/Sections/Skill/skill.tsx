@@ -17,7 +17,7 @@ import SkillItem from "@/components/skill/skillItem";
 
 export default function Skill() {
   return (
-    <section id="skill-section" className={styles.sectionContainer}>
+    <section id="skill" className={styles.sectionContainer}>
       <div className={styles.studentHeader}>
         <div className={styles.skill}>
           <p className={styles.title}>Skills</p>

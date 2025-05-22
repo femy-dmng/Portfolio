@@ -7,7 +7,7 @@ import portfolio from "@/assets/project/projectTest.png";
 
 export default function Project() {
   return (
-    <section>
+    <section id="projet">
       <h2 className={styles.title}>Projects</h2>
       <div className={styles.projectItemContainer}>
         <p className={styles.textBackground}>
