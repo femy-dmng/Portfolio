@@ -11,17 +11,17 @@ export default function Project() {
       <h2 className={styles.title}>Projects</h2>
       <div className={styles.projectItemContainer}>
         <p className={styles.textBackground}>
-          project
+          projects
           <br />
-          project
+          projects
           <br />
-          project
+          projects
           <br />
-          project
+          projects
           <br />
-          project
+          projects
           <br />
-          project
+          projects
           <br />
         </p>
         <ProjectItem

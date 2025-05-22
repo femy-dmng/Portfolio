@@ -6,6 +6,8 @@
   padding: 0 3em;
   margin: 10px 0;
   z-index: 10;
+  z-index: 1;
+  position: relative;
 
   &.even {
     flex-direction: row-reverse;
