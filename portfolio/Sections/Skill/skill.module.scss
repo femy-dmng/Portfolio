@@ -13,7 +13,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
+    //width: 100%;
     gap: 4rem;
 
     h2 {
@@ -50,7 +50,7 @@
 
   .skill {
     background-color: $background-color-primary;
-    width: 30rem;
+    width: 26rem;
     padding: 2em 1em 5em 1em;
     display: flex;
     flex-direction: column;
@@ -62,10 +62,10 @@
     .title {
       color: $text-color-light;
       font-family: $font-primary;
-      font-size: 4rem;
-      text-align: center;
+      font-size: 5rem;
+      text-align: left;
       width: 100%;
-      margin: 0 0 1em 0;
+      margin: 0 0 0.3em 0.5em;
     }
 
     .skillContent {
@@ -76,8 +76,9 @@
     }
 
     .skillLine {
-      display: flex;
-      align-items: flex-start;
+      display: grid;
+      grid-template-columns: 6rem 1fr;
+      align-items: center;
       gap: 1rem;
       width: 100%;
     }
@@ -87,17 +88,17 @@
       font-family: $font-tertiary;
       color: $text-color-dark;
       margin: 0;
-      width: 6rem;
+      width: 9rem;
       text-transform: uppercase;
       font-weight: bold;
     }
 
     .logoRow {
-      display: flex;
-      flex-direction: column; // Aligne les logos en colonne
+      padding-left: 0.5em;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); // 3 colonnes fixes
       gap: 0.6rem;
-      flex: 1;
-      align-items: flex-start;
+      align-items: center;
 
       .logoWrapper {
         position: relative;

@@ -1,16 +1,18 @@
 import styles from "./skill.module.scss";
-import Image from "next/image";
 
 // Logos
-import logoC from "@/assets/skill logo/C++ Logo.png";
+import logoC from "@/assets/skill logo/C++ Logo.webp";
 import logoJava from "@/assets/skill logo/Java Logo.webp";
-import logoJS from "@/assets/skill logo/js.png";
+import logoJS from "@/assets/skill logo/JS logo.webp";
+import logoTS from "@/assets/skill logo/TS.webp";
 import logoHTML from "@/assets/skill logo/html logo.webp";
+import logoCSS from "@/assets/skill logo/css.png";
 import logoSQL from "@/assets/skill logo/mysql logo.webp";
 import logoReact from "@/assets/skill logo/React logo.png";
 import logoGit from "@/assets/skill logo/git.png";
 import logoVSCode from "@/assets/skill logo/vscode.png";
 import logoNext from "@/assets/skill logo/next.png";
+import logofigma from "@/assets/skill logo/figma.png";
 import SkillItem from "@/components/skill/skillItem";
 
 export default function Skill() {
@@ -23,70 +25,70 @@ export default function Skill() {
           <div className={styles.skillContent}>
             <div className={styles.skillLine}>
               <p className={styles.categoryTitle}>web :</p>
-              <SkillItem
-                image={logoHTML}
-                description="logo HTML"
-                label="HTML"
-              />
-              <SkillItem
-                image={logoJS}
-                description="logo JS"
-                label="JavaScript"
-              />
-              <SkillItem
-                image={logoReact}
-                description="logo React"
-                label="React"
-              />
-              <SkillItem
-                image={logoNext}
-                description="logo Next"
-                label="Next.js"
-              />
-              <div className={styles.logoRow}></div>
+              <div className={styles.logoRow}>
+                <SkillItem
+                  image={logoHTML}
+                  description="logo HTML"
+                  label="HTML"
+                />
+                <SkillItem image={logoCSS} description="logo CSS" label="CSS" />
+                <SkillItem
+                  image={logoJS}
+                  description="logo JS"
+                  label="JavaScript"
+                />
+                <SkillItem
+                  image={logoTS}
+                  description="logo TS"
+                  label="TypeScript"
+                />
+                <SkillItem
+                  image={logoReact}
+                  description="logo React"
+                  label="React"
+                />
+                <SkillItem
+                  image={logoNext}
+                  description="logo Next"
+                  label="Next.js"
+                />
+              </div>
             </div>
 
             <div className={styles.skillLine}>
-              <p className={styles.categoryTitle}>logiciel:</p>
-              <SkillItem image={logoC} description="logo C++" label="C++" />
-              <SkillItem
-                image={logoJava}
-                description="logo Java"
-                label="Java"
-              />
-              <div className={styles.logoRow}></div>
+              <p className={styles.categoryTitle}>logiciel :</p>
+              <div className={styles.logoRow}>
+                <SkillItem image={logoC} description="logo C++" label="C++" />
+                <SkillItem
+                  image={logoJava}
+                  description="logo Java"
+                  label="Java"
+                />
+              </div>
             </div>
 
             <div className={styles.skillLine}>
-              <p className={styles.categoryTitle}>BDD:</p>
-              <SkillItem image={logoSQL} description="logo SQL" label="SQL" />
-              <div className={styles.logoRow}></div>
+              <p className={styles.categoryTitle}>BDD :</p>
+              <div className={styles.logoRow}>
+                <SkillItem image={logoSQL} description="logo SQL" label="SQL" />
+              </div>
             </div>
 
             <div className={styles.skillLine}>
-              <p className={styles.categoryTitle}>design:</p>
-              <SkillItem
-                image={logoJS}
-                description="logo JS"
-                label="JavaScript"
-              />
-              <SkillItem
-                image={logoReact}
-                description="logo React"
-                label="React"
-              />
-              <div className={styles.logoRow}></div>
-            </div>
-
-            <div className={styles.skillLine}>
-              <p className={styles.categoryTitle}>autre:</p>
-              <SkillItem image={logoGit} description="logo Git" label="Git" />
-              <SkillItem
-                image={logoVSCode}
-                description="logo VSCode"
-                label="VSCode"
-              />
-              <div className={styles.logoRow}></div>
+              <p className={styles.categoryTitle}>outils :</p>
+              <div className={styles.logoRow}>
+                <SkillItem image={logoGit} description="logo Git" label="Git" />
+                <SkillItem
+                  image={logoVSCode}
+                  description="logo VSCode"
+                  label="VSCode"
+                />
+                <SkillItem
+                  image={logofigma}
+                  description="logo Figma"
+                  label="Figma"
+                />
+              </div>
             </div>
           </div>
         </div>
