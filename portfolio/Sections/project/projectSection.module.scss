@@ -11,4 +11,23 @@
 
 .projectItemContainer {
   background-color: $background-color-primary;
+  overflow: hidden;
+  z-index: 10;
+  position: relative;
+
+  .textBackground {
+    font-size: 10rem;
+    text-align: center;
+    position: absolute;
+    z-index: 0 !important;
+
+    margin-top: -0.5em;
+    padding: 0;
+    padding-bottom: 0;
+
+    color: transparent; // alternative
+    -webkit-text-fill-color: transparent; // rend l'intérieur transparent
+    -webkit-text-stroke-width: 1px; // épaisseur de la bordure
+    -webkit-text-stroke-color: white; // la tu met ta couleur depuis tes variables SCSS
+  }
 }

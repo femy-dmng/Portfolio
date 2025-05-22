@@ -10,6 +10,20 @@ export default function Project() {
     <section>
       <h2 className={styles.title}>Projects</h2>
       <div className={styles.projectItemContainer}>
+        <p className={styles.textBackground}>
+          project
+          <br />
+          project
+          <br />
+          project
+          <br />
+          project
+          <br />
+          project
+          <br />
+          project
+          <br />
+        </p>
         <ProjectItem
           image={portfolio}
           title="Mon Portfolio"
