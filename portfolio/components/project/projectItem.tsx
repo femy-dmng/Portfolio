@@ -1,25 +1,42 @@
-import Image from "next/image";
-import PImage from "@/assets/project/projectTest.png";
-import Figma from "@/assets/skill logo/figma.png";
+import Image, { StaticImageData } from "next/image";
 import styles from "./projectItem.module.scss";
 import SkillItem from "../skill/skillItem";
 
-export default function ProjectItem() {
+type ProjectItemProps = {
+  image: string | StaticImageData;
+  title: string;
+  logo: {
+    logoImage: StaticImageData;
+    logoDescription: string;
+    logoLabel: string;
+  }[];
+  description: string;
+};
+
+export default function ProjectItem({
+  image,
+  title,
+  logo,
+  description,
+}: ProjectItemProps) {
   return (
     <article className={styles.projectContainer}>
-      <Image src={PImage} alt="Image projet" />
+      <Image src={image} alt="Image projet" />
       <div className={styles.description}>
         <div className={styles.titleLine}>
-          <h3 className={styles.projectTitle}>Project</h3>
+          <h3 className={styles.projectTitle}>{title}</h3>
           <div className={styles.technoLogo}>
-            <SkillItem image={Figma} description="Logo Figma" label="Figma" />
-            <SkillItem image={Figma} description="Logo Figma" label="Figma" />
+            {logo.map((logo, index) => (
+              <SkillItem
+                key={index}
+                image={logo.logoImage}
+                description={logo.logoDescription}
+                label={logo.logoLabel}
+              />
+            ))}
           </div>
         </div>
-        <p className={styles.textDescription}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <p className={styles.textDescription}>{description}</p>
       </div>
     </article>
   );
