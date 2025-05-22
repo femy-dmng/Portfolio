@@ -6,6 +6,18 @@
   padding: 0 3em;
   margin: 10px 0;
 
+  &.even {
+    flex-direction: row-reverse;
+
+    .titleLine {
+      flex-direction: row-reverse !important;
+    }
+
+    .textDescription {
+      text-align: right !important;
+    }
+  }
+
   img {
     max-height: 30em;
     width: auto;
@@ -34,6 +46,7 @@
     .textDescription {
       font-family: $font-tertiary;
       color: $text-color-dark;
+      text-align: left;
     }
   }
 }

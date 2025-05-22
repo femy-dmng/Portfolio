@@ -3,6 +3,7 @@ import styles from "./projectItem.module.scss";
 import SkillItem from "../skill/skillItem";
 
 type ProjectItemProps = {
+  isEven?: boolean;
   image: string | StaticImageData;
   title: string;
   logo: {
@@ -14,14 +15,18 @@ type ProjectItemProps = {
 };
 
 export default function ProjectItem({
+  isEven = false,
   image,
   title,
   logo,
   description,
 }: ProjectItemProps) {
   return (
-    <article className={styles.projectContainer}>
+    <article
+      className={`${styles.projectContainer} ${isEven ? styles.even : ""}`}
+    >
       <Image src={image} alt="Image projet" />
+
       <div className={styles.description}>
         <div className={styles.titleLine}>
           <h3 className={styles.projectTitle}>{title}</h3>
