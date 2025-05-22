@@ -6,7 +6,7 @@ import logoJava from "@/assets/skill logo/Java Logo.webp";
 import logoJS from "@/assets/skill logo/JS logo.webp";
 import logoTS from "@/assets/skill logo/TS.webp";
 import logoHTML from "@/assets/skill logo/html logo.webp";
-import logoCSS from "@/assets/skill logo/css.png";
+import logoCSS from "@/assets/skill logo/CSS.png";
 import logoSQL from "@/assets/skill logo/mysql logo.webp";
 import logoReact from "@/assets/skill logo/React logo.png";
 import logoGit from "@/assets/skill logo/git.png";
@@ -17,7 +17,7 @@ import SkillItem from "@/components/skill/skillItem";
 
 export default function Skill() {
   return (
-    <section id="skill-section" className={styles.sectionContainer}>
+    <section id="skill" className={styles.sectionContainer}>
       <div className={styles.studentHeader}>
         <div className={styles.skill}>
           <p className={styles.title}>Skills</p>

@@ -4,7 +4,7 @@ import lou from "@/assets/louu.jpg";
 
 export default function Herobanner() {
   return (
-    <section className={styles.herobanner}>
+    <section id="presentation" className={styles.herobanner}>
       <h1>Développeuse Web</h1>
       <h2>Femy DOMINGO</h2>
       <div className={styles.presentation}>
