@@ -4,19 +4,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Cherish&display=swap");
 
 //Couleurs
-$background-color-primary: #ff70bc;
+$background-color-primary: #fab3d9;
 $background-color-secondary: #ffffff;
 $background-color-tertiary: #4a4747;
 $text-color-light: #ffffff;
 $text-color-dark: #4a4747;
-$text-color-medium: #ff70bc;
-$color-hover: #f1bed9;
+$text-color-medium: #fab3d9;
+$color-hover-light: #f1bed9;
+$color-hover-dark: #4a4747;
 
 //Espacements
 $gap: 20px;
 
 //Taille de texte
-$navbar-title-font-size: 1.6rem;
+$font-size-navbar-title: 1.6rem;
+$font-size-paragraphe: 1.8rem;
 
 //Police
 $font-primary: "Kalnia", serif;

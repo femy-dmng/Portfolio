@@ -22,10 +22,10 @@
     a {
       color: $text-color-light;
       text-decoration: none;
-      font-size: $navbar-title-font-size;
+      font-size: $font-size-navbar-title;
 
       &:hover {
-        color: $color-hover;
+        color: $color-hover-dark;
       }
     }
   }
