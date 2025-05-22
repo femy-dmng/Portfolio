@@ -45,6 +45,7 @@ export default function Project() {
             },
           ]}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."
+          githubLink="https://github.com/femy-dmng/Portfolio/"
         />
         <ProjectItem
           isEven={true}

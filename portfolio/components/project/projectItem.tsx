@@ -1,6 +1,8 @@
 import Image, { StaticImageData } from "next/image";
 import styles from "./projectItem.module.scss";
 import SkillItem from "../skill/skillItem";
+import Link from "next/link";
+import githubIcon from "@/assets/skill logo/github.png";
 
 type ProjectItemProps = {
   isEven?: boolean;
@@ -12,6 +14,7 @@ type ProjectItemProps = {
     logoLabel: string;
   }[];
   description: string;
+  githubLink?: string;
 };
 
 export default function ProjectItem({
@@ -20,6 +23,7 @@ export default function ProjectItem({
   title,
   logo,
   description,
+  githubLink,
 }: ProjectItemProps) {
   return (
     <article
@@ -42,6 +46,16 @@ export default function ProjectItem({
           </div>
         </div>
         <p className={styles.textDescription}>{description}</p>
+        {githubLink && (
+          <Link href={githubLink} target="_blank" className={styles.githubLink}>
+            <Image
+              src={githubIcon}
+              alt="Github logo link"
+              width={30}
+              height={30}
+            />
+          </Link>
+        )}
       </div>
     </article>
   );
