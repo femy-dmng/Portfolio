@@ -5,8 +5,7 @@ export default function Project() {
   return (
     <section>
       <h2 className={styles.title}>Projects</h2>
-      <div className={styles.projectContainer}>
-        <ProjectItem />
+      <div className={styles.projectItemContainer}>
         <ProjectItem />
       </div>
     </section>
