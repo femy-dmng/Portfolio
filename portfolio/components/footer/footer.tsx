@@ -36,7 +36,7 @@ export default function footer() {
           </Link>
         </li>
         <li>
-          <Link href="/contact">Contact</Link>
+          <Link href="mailto:domingofemy@gmail.com">Contact</Link>
         </li>
       </ul>
     </footer>

@@ -98,8 +98,9 @@ export default function Skill() {
             <span className={styles.IT}>IT</span>student
           </h2>
           <p className={styles.para}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua...
+            As part of my ongoing two-year technical degree in IT and
+            Electronics, I’m developing strong skills in programming, data
+            management, networking, and cybersecurity.
           </p>
         </div>
       </div>

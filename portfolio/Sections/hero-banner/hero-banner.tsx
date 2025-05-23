@@ -5,19 +5,19 @@ import lou from "@/assets/louu.jpg";
 export default function Herobanner() {
   return (
     <section id="presentation" className={styles.herobanner}>
-      <h1 className={styles.devTitle}>Développeuse Web</h1>
+      <h1 className={styles.devTitle}>Web Developer</h1>
       <h2 className={styles.nameTitle}>Femy DOMINGO</h2>
       <div className={styles.presentation}>
         <div className={styles.test}>
           <p className={styles.back}>Portfolio</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            I'm an IT student based in France with a passion for front-end
+            development and creating smooth, engaging user experiences on the
+            web. From clean interfaces to interactive components. Currently
+            honing my skills in HTML, CSS, JavaScript, and frameworks like
+            React, I'm always looking for opportunities to learn, collaborate,
+            and build projects that not only look good — but feel great to use.
+            Feel free to explore my work below.
           </p>
         </div>
         <div>

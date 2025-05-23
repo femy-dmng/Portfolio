@@ -15,10 +15,6 @@
       flex-direction: row-reverse !important;
     }
 
-    .textDescription {
-      text-align: right !important;
-    }
-
     .description {
       .contentWrapper {
         align-items: flex-end;
@@ -26,9 +22,11 @@
     }
   }
 
-  img {
-    max-height: 769px;
-    max-width: 449px;
+  .imageProject {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    align-self: center;
   }
 
   .description {
@@ -48,10 +46,12 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
 
       .projectTitle {
         color: $text-color-dark;
         font-family: $font-secondary;
+        font-size: 2rem;
       }
 
       .technoLogo {
@@ -65,7 +65,7 @@
       font-family: $font-tertiary;
       font-size: 1.5rem;
       color: $text-color-dark;
-      text-align: left;
+      text-align: justify;
     }
 
     .githubLink {
