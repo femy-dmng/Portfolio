@@ -3,6 +3,7 @@ import styles from "./projectSection.module.scss";
 import figmalogo from "@/assets/skill logo/figma.png";
 import nextlogo from "@/assets/skill logo/next.png";
 import reactlogo from "@/assets/skill logo/React logo.png";
+import vercelLogo from "@/assets/skill logo/vercel.png";
 
 import logoHtml from "@/assets/skill logo/html logo.webp";
 import logoCss from "@/assets/skill logo/CSS.png";
@@ -48,6 +49,11 @@ export default function Project() {
               logoImage: reactlogo,
               logoDescription: "Logo React",
               logoLabel: "React",
+            },
+            {
+              logoImage: vercelLogo,
+              logoDescription: "Logo Vercel",
+              logoLabel: "Vercel",
             },
           ]}
           description="This project is my personal portfolio — the very website you're browsing right now.

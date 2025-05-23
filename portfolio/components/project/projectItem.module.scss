@@ -27,8 +27,10 @@
   }
 
   .imageProject {
-    height: auto;
-    width: 30%;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    align-self: center;
   }
 
   .description {
