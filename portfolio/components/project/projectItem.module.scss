@@ -19,6 +19,12 @@
     .textDescription {
       text-align: right !important;
     }
+
+    .description {
+      .contentWrapper {
+        align-items: flex-end;
+      }
+    }
   }
 
   img {
@@ -27,9 +33,17 @@
   }
 
   .description {
-    padding: 9em 2em 0em 1em;
+    padding: 9em 2em 2em 1em;
     flex: 1;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .contentWrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      height: 100%;
+    }
 
     .titleLine {
       display: flex;
@@ -44,6 +58,7 @@
       .technoLogo {
         display: flex;
         flex-direction: row;
+        gap: 1rem;
       }
     }
 
@@ -55,15 +70,12 @@
     }
 
     .githubLink {
-      position: absolute;
-      bottom: 1em;
-      left: 1em;
-      right: unset;
       width: 30px;
       height: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-top: auto;
 
       img {
         width: 30px;
@@ -78,7 +90,18 @@
 
 @media (max-width: 768px) {
   .projectContainer {
-    .technoLogo {
+    padding: 0 1.5em;
+
+    .description {
+      padding: 6em 1em 1.5em 1em;
+
+      .contentWrapper {
+        gap: 1.5rem;
+      }
+
+      .textDescription {
+        font-size: 1.2rem;
+      }
     }
   }
 }
@@ -87,9 +110,27 @@
   .projectContainer,
   .projectContainer.even {
     flex-direction: column;
+
     .description {
+      padding: 2em 1em;
+
+      .contentWrapper {
+        align-items: center;
+        text-align: center;
+      }
+
+      .titleLine {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .textDescription {
+        text-align: center !important;
+      }
+
       .githubLink {
-        margin-top: 50px;
+        margin-top: 2rem;
       }
     }
   }
