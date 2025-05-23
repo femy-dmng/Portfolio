@@ -31,7 +31,7 @@ export default function Navbar() {
       </button>
 
       <div className={style.logoContainer}>
-        <Link href="#presentation" onClick={closeMenu}>
+        <Link href="/" onClick={closeMenu}>
           <Image src={logo} alt="Logo" width={35} height={35} />
         </Link>
       </div>
