@@ -92,17 +92,18 @@
     img {
       max-height: 512px;
       max-width: 300px;
-    padding: 0 1.5em;
+      padding: 0 1.5em;
 
-    .description {
-      padding: 6em 1em 1.5em 1em;
+      .description {
+        padding: 6em 1em 1.5em 1em;
 
-      .contentWrapper {
-        gap: 1.5rem;
-      }
+        .contentWrapper {
+          gap: 1.5rem;
+        }
 
-      .textDescription {
-        font-size: 1.2rem;
+        .textDescription {
+          font-size: 1.2rem;
+        }
       }
     }
   }
