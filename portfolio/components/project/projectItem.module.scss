@@ -5,7 +5,6 @@
   flex-direction: row;
   padding: 0 3em;
   margin: 10px 0;
-  z-index: 10;
   z-index: 1;
   position: relative;
 
@@ -22,8 +21,8 @@
   }
 
   img {
-    max-height: 30em;
-    width: auto;
+    max-height: 769px;
+    max-width: 449px;
   }
 
   .description {
@@ -76,17 +75,34 @@
 
 //responsive
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .projectContainer {
-    .technoLogo {
+    img {
+      max-height: 512px;
+      max-width: 300px;
     }
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 768px) {
   .projectContainer,
   .projectContainer.even {
     flex-direction: column;
+    align-items: center;
+
+    .img {
+      max-height: 256;
+      max-width: 150px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .projectContainer,
+  .projectContainer.even {
+    flex-direction: column;
+    .img {
+    }
     .description {
       .githubLink {
         margin-top: 50px;
