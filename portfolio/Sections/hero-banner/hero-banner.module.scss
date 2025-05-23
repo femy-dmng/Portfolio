@@ -27,6 +27,8 @@
     justify-content: space-between;
     .test {
       //place-content: flex-end;
+      flex: 1;
+      position: relative;
     }
 
     p {
@@ -52,6 +54,67 @@
       border-radius: 50%;
       object-fit: cover;
       //margin-bottom: 10em;
+    }
+  }
+}
+
+//responsive
+
+@media (max-width: 1024px) {
+  .herobanner {
+    h1,
+    h2 {
+      font-size: 5rem;
+    }
+
+    .presentation {
+      .back {
+        font-size: 15em;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .herobanner {
+    h1,
+    h2 {
+      font-size: 3.5rem;
+      text-align: center;
+      padding-left: 0;
+    }
+
+    .presentation {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+      margin-top: $responsive-inline-item-spacing-768px;
+      p {
+        margin-top: $responsive-inline-item-spacing-768px;
+      }
+
+      .back {
+        display: none;
+      }
+
+      img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .herobanner {
+    h1,
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
     }
   }
 }

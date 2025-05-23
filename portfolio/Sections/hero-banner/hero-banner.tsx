@@ -5,8 +5,8 @@ import lou from "@/assets/louu.jpg";
 export default function Herobanner() {
   return (
     <section id="presentation" className={styles.herobanner}>
-      <h1>Développeuse Web</h1>
-      <h2>Femy DOMINGO</h2>
+      <h1 className={styles.devTitle}>Développeuse Web</h1>
+      <h2 className={styles.nameTitle}>Femy DOMINGO</h2>
       <div className={styles.presentation}>
         <div className={styles.test}>
           <p className={styles.back}>Portfolio</p>
