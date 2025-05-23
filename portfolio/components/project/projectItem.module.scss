@@ -26,9 +26,9 @@
     }
   }
 
-  img {
-    max-height: 769px;
-    max-width: 449px;
+  .imageProject {
+    height: auto;
+    width: 30%;
   }
 
   .description {
@@ -48,10 +48,12 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
 
       .projectTitle {
         color: $text-color-dark;
         font-family: $font-secondary;
+        font-size: 2rem;
       }
 
       .technoLogo {

@@ -29,7 +29,7 @@ export default function ProjectItem({
     <article
       className={`${styles.projectContainer} ${isEven ? styles.even : ""}`}
     >
-      <Image src={image} alt="Image projet" />
+      <Image className={styles.imageProject} src={image} alt="Image projet" />
 
       <div className={styles.description}>
         <div className={styles.titleLine}>

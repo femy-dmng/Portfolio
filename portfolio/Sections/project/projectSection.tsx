@@ -3,6 +3,12 @@ import styles from "./projectSection.module.scss";
 import figmalogo from "@/assets/skill logo/figma.png";
 import nextlogo from "@/assets/skill logo/next.png";
 import reactlogo from "@/assets/skill logo/React logo.png";
+
+import logoHtml from "@/assets/skill logo/html logo.webp";
+import logoCss from "@/assets/skill logo/CSS.png";
+import logoJS from "@/assets/skill logo/JS logo.webp";
+
+import calendrier from "@/assets/project/Calendrier.png";
 import portfolio from "@/assets/project/projectTest.png";
 
 export default function Project() {
@@ -44,28 +50,30 @@ export default function Project() {
               logoLabel: "React",
             },
           ]}
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."
+          description="This project is my personal portfolio — the very website you're browsing right now.
+
+It was built using Next.js, with Vercel handling the hosting. I also set up continuous deployment directly from a GitHub repository"
           githubLink="https://github.com/femy-dmng/Portfolio/"
         />
         <ProjectItem
           isEven={true}
-          image={portfolio}
+          image={calendrier}
           title="Calendrier"
           logo={[
             {
-              logoImage: figmalogo,
-              logoDescription: "Logo Figma",
-              logoLabel: "Figma",
+              logoImage: logoHtml,
+              logoDescription: "Logo html",
+              logoLabel: "HTML",
             },
             {
-              logoImage: nextlogo,
-              logoDescription: "Logo Next",
-              logoLabel: "Next",
+              logoImage: logoCss,
+              logoDescription: "Logo css",
+              logoLabel: "CSS",
             },
             {
-              logoImage: reactlogo,
-              logoDescription: "Logo React",
-              logoLabel: "React",
+              logoImage: logoJS,
+              logoDescription: "Logo JS",
+              logoLabel: "JavaScript",
             },
           ]}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."
