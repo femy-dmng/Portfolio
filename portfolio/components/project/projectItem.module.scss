@@ -15,10 +15,6 @@
       flex-direction: row-reverse !important;
     }
 
-    .textDescription {
-      text-align: right !important;
-    }
-
     .description {
       .contentWrapper {
         align-items: flex-end;
@@ -69,7 +65,7 @@
       font-family: $font-tertiary;
       font-size: 1.5rem;
       color: $text-color-dark;
-      text-align: left;
+      text-align: justify;
     }
 
     .githubLink {

@@ -58,7 +58,7 @@ export default function Project() {
           ]}
           description="This project is my personal portfolio — the very website you're browsing right now.
 
-It was built using Next.js, with Vercel handling the hosting. I also set up continuous deployment directly from a GitHub repository"
+It was built using Next.js, with Vercel handling the hosting. I also set up continuous deployment directly from a GitHub repository."
           githubLink="https://github.com/femy-dmng/Portfolio/"
         />
         <ProjectItem
@@ -82,7 +82,9 @@ It was built using Next.js, with Vercel handling the hosting. I also set up cont
               logoLabel: "JavaScript",
             },
           ]}
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."
+          description="This project is a custom-built calendar website, designed to help users view and manage dates and elements to them.
+
+It was developed using HTML, CSS, and JavaScript. The goal was to create a smooth user experience without relying on external libraries or frameworks, reinforcing my core front-end skills."
         />
       </div>
     </section>
