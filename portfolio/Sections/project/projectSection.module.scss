@@ -34,3 +34,17 @@
     pointer-events: none; // Pour éviter d'interagir par erreur
   }
 }
+
+//responsive
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+}
