@@ -153,3 +153,123 @@
     }
   }
 }
+
+//responsive
+
+@media (max-width: 1024px) {
+  .sectionContainer {
+    padding: 0 1em;
+
+    .studentHeader {
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      h2 {
+        font-size: 6rem;
+        text-align: center;
+
+        .IT {
+          font-size: 12rem;
+        }
+      }
+    }
+
+    .skill {
+      width: 100%;
+      max-width: 26rem;
+
+      .title {
+        font-size: 4rem;
+        text-align: center;
+        margin: 0 0 0.5em 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionContainer {
+    .studentHeader {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+
+      h2 {
+        font-size: 4rem;
+        text-align: center;
+
+        .IT {
+          font-size: 8rem;
+        }
+      }
+
+      .studentText {
+        align-items: center;
+        text-align: center;
+
+        .para {
+          font-size: 1rem;
+          max-width: 100%;
+          padding: 0 1rem;
+        }
+      }
+    }
+
+    .skill {
+      padding: 1.5em 1em 3em 1em;
+
+      .title {
+        font-size: 3rem;
+      }
+
+      .skillLine {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        text-align: center;
+      }
+
+      .categoryTitle {
+        width: 100%;
+        font-size: 1.2rem;
+      }
+
+      .logoRow {
+        padding-left: 0;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionContainer {
+    .studentHeader {
+      h2 {
+        font-size: 3rem;
+
+        .IT {
+          font-size: 6rem;
+        }
+      }
+    }
+
+    .skill {
+      margin: 1;
+      .title {
+        font-size: 2.5rem;
+      }
+
+      .logoRow {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+
+        .logoWrapper {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
