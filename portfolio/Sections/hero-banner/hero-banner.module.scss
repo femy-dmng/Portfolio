@@ -71,6 +71,12 @@
       .back {
         font-size: 15em;
       }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        max-width: 90%;
+      }
     }
   }
 }
@@ -89,8 +95,13 @@
       align-items: center;
       text-align: center;
       margin-top: $responsive-inline-item-spacing-768px;
+
       p {
         margin-top: $responsive-inline-item-spacing-768px;
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 0;
+        max-width: 100%;
       }
 
       .back {
@@ -112,9 +123,18 @@
       font-size: 2.5rem;
     }
 
-    img {
-      width: 200px;
-      height: 200px;
+    .presentation {
+      p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+        padding: 0 1rem;
+        margin-top: 1.5rem;
+      }
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
     }
   }
 }
