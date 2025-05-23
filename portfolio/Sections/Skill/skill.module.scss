@@ -245,6 +245,8 @@
 
 @media (max-width: 480px) {
   .sectionContainer {
+    width: 100%;
+
     .studentHeader {
       h2 {
         font-size: 3rem;
@@ -256,14 +258,35 @@
     }
 
     .skill {
-      margin: 1;
+      margin: 0 auto;
+      padding: 1.5em 1em;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: min(23rem, 95%);
+      box-sizing: border-box;
+
       .title {
         font-size: 2.5rem;
       }
 
-      .logoRow {
-        grid-template-columns: repeat(2, 1fr);
+      .skillLine {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         gap: 0.5rem;
+
+        .categoryTitle {
+          text-align: center;
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      .logoRow {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 100%;
+        justify-items: center;
 
         .logoWrapper {
           width: 40px;
