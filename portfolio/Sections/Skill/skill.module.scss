@@ -246,6 +246,8 @@
 @media (max-width: 480px) {
   .sectionContainer {
     width: 100%;
+    max-width: 100%;
+    padding: 0;
 
     .studentHeader {
       h2 {
@@ -258,12 +260,12 @@
     }
 
     .skill {
-      margin: 0 auto;
       padding: 1.5em 1em;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      width: min(23rem, 95%);
+      width: min(23rem, 90%);
       box-sizing: border-box;
+      margin: 0 auto;
 
       .title {
         font-size: 2.5rem;
@@ -274,6 +276,7 @@
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;
+        width: 100%;
 
         .categoryTitle {
           text-align: center;
