@@ -7,9 +7,18 @@ import Link from "next/link";
 export default function footer() {
   return (
     <footer className={style.footer}>
-      <ul>
+      <ul className={style.listfooter}>
         <li>
-          <Image src={logoGitHub} alt="GitHub" width={40} height={40} /> GitHub
+          <Link href="https://github.com/femy-dmng" target="_blank">
+            <Image
+              className={style.logo}
+              src={logoGitHub}
+              alt="GitHub"
+              width={40}
+              height={40}
+            />
+            GitHub{" "}
+          </Link>
         </li>
         <li>
           <Link
@@ -30,7 +39,6 @@ export default function footer() {
           <Link href="mailto:domingofemy@gmail.com">Contact</Link>
         </li>
       </ul>
-      <Link href="/contact">Contact</Link>
     </footer>
   );
 }
