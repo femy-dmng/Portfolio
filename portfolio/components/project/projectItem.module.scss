@@ -79,19 +79,18 @@
 @media (max-width: 768px) {
   .projectContainer {
     .technoLogo {
-      img {
-        height: 40px;
-        width: auto;
-      }
     }
   }
 }
 
 @media (max-width: 620px) {
-  .projectContainer {
+  .projectContainer,
+  .projectContainer.even {
     flex-direction: column;
-    img {
-      position: relative;
+    .description {
+      .githubLink {
+        margin-top: 50px;
+      }
     }
   }
 }
