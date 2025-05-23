@@ -1,0 +1,154 @@
+@use "@/styles/variables" as *;
+
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 0 3em;
+  margin: 10px 0;
+  z-index: 1;
+  position: relative;
+
+  &.even {
+    flex-direction: row-reverse;
+
+    .titleLine {
+      flex-direction: row-reverse !important;
+    }
+
+    .description {
+      .contentWrapper {
+        align-items: flex-end;
+      }
+    }
+  }
+
+  .imageProject {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    align-self: center;
+  }
+
+  .description {
+    padding: 9em 2em 2em 1em;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .contentWrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      height: 100%;
+    }
+
+    .titleLine {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .projectTitle {
+        color: $text-color-dark;
+        font-family: $font-secondary;
+        font-size: 2rem;
+      }
+
+      .technoLogo {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+      }
+    }
+
+    .textDescription {
+      font-family: $font-tertiary;
+      font-size: 1.5rem;
+      color: $text-color-dark;
+      text-align: justify;
+    }
+
+    .githubLink {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: auto;
+
+      img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+//responsive
+
+@media (max-width: 1024px) {
+  .projectContainer {
+    img {
+      max-height: 512px;
+      max-width: 300px;
+      padding: 0 1.5em;
+
+      .description {
+        padding: 6em 1em 1.5em 1em;
+
+        .contentWrapper {
+          gap: 1.5rem;
+        }
+
+        .textDescription {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .projectContainer,
+  .projectContainer.even {
+    flex-direction: column;
+    align-items: center;
+
+    .img {
+      max-height: 256;
+      max-width: 150px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .projectContainer,
+  .projectContainer.even {
+    flex-direction: column;
+    .img {
+    }
+    .description {
+      padding: 2em 1em;
+
+      .contentWrapper {
+        align-items: center;
+        text-align: center;
+      }
+
+      .titleLine {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .textDescription {
+        text-align: center !important;
+      }
+
+      .githubLink {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

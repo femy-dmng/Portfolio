@@ -12,8 +12,22 @@ export default function footer() {
           <Image src={logoGitHub} alt="GitHub" width={40} height={40} /> GitHub
         </li>
         <li>
-          <Image src={logoLinkedIn} alt="LinkedIn" width={40} height={40} />{" "}
-          LinkedIn
+          <Link
+            href="https://www.linkedin.com/in/femy-domingo/"
+            target="_blank"
+          >
+            <Image
+              className={style.logo}
+              src={logoLinkedIn}
+              alt="LinkedIn"
+              width={40}
+              height={40}
+            />
+            LinkedIn
+          </Link>
+        </li>
+        <li>
+          <Link href="mailto:domingofemy@gmail.com">Contact</Link>
         </li>
       </ul>
       <Link href="/contact">Contact</Link>

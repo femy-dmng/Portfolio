@@ -1,0 +1,315 @@
+@use "@/styles/variables" as *;
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-color-tertiary;
+  padding: 0 1em 0 4em;
+  scroll-margin-top: 80px;
+
+  .studentHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    //width: 100%;
+    gap: 4rem;
+
+    h2 {
+      font-family: $font-primary;
+      font-size: 8rem;
+      font-weight: 300;
+      color: $text-color-medium;
+      margin: 0;
+
+      .IT {
+        font-family: $font-secondary;
+        font-size: 15rem;
+        color: $text-color-light;
+        margin: 0;
+        line-height: 1;
+      }
+    }
+  }
+
+  .studentText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1rem;
+
+    .para {
+      margin-top: 1rem;
+      font-family: $font-tertiary;
+      font-size: $font-size-paragraphe;
+      color: $text-color-light;
+      max-width: 35rem;
+    }
+  }
+
+  .skill {
+    background-color: $background-color-primary;
+    width: 26rem;
+    padding: 2em 1em 5em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 4px;
+    position: relative;
+    top: -5em;
+
+    .title {
+      color: $text-color-light;
+      font-family: $font-primary;
+      font-size: 5rem;
+      text-align: left;
+      width: 100%;
+      margin: 0 0 0.3em 0.5em;
+    }
+
+    .skillContent {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 100%;
+    }
+
+    .skillLine {
+      display: grid;
+      grid-template-columns: 6rem 1fr;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .categoryTitle {
+      font-size: 1.4rem;
+      font-family: $font-tertiary;
+      color: $text-color-dark;
+      margin: 0;
+      width: 9rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .logoRow {
+      padding-left: 0.5em;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); // 3 colonnes fixes
+      gap: 0.6rem;
+      align-items: center;
+
+      .logoWrapper {
+        position: relative;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        overflow: visible;
+        border-radius: 10%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          transition: all 0.3s ease;
+          border-radius: 10%;
+          z-index: 1;
+        }
+
+        .techName {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 0.85rem;
+          font-weight: bold;
+          font-family: $font-tertiary;
+          color: $text-color-light;
+          background-color: rgba(0, 0, 0, 0.7);
+          padding: 4px 6px;
+          border-radius: 6px;
+          white-space: nowrap;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          z-index: 2;
+        }
+
+        &:hover {
+          img {
+            filter: blur(3px) brightness(1.1);
+            transform: scale(1.05);
+          }
+
+          .techName {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+//responsive
+
+@media (max-width: 1250px) {
+  .sectionContainer {
+    .studentHeader {
+      h2 {
+        font-size: 6rem;
+
+        .IT {
+          font-size: 11rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .sectionContainer {
+    padding: 0 1em;
+
+    .studentHeader {
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      h2 {
+        font-size: 5rem;
+        text-align: center;
+
+        .IT {
+          font-size: 9rem;
+        }
+      }
+    }
+
+    .skill {
+      width: 100%;
+      max-width: 26rem;
+
+      .title {
+        font-size: 4rem;
+        text-align: center;
+        margin: 0 0 0.5em 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionContainer {
+    .studentHeader {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+
+      h2 {
+        font-size: 4rem;
+        text-align: center;
+
+        .IT {
+          font-size: 8rem;
+        }
+      }
+
+      .studentText {
+        align-items: center;
+        text-align: center;
+
+        .para {
+          font-size: 1rem;
+          max-width: 100%;
+          padding: 0 1rem;
+        }
+      }
+    }
+
+    .skill {
+      padding: 1.5em 1em 3em 1em;
+
+      .title {
+        font-size: 3rem;
+      }
+
+      .skillLine {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        text-align: center;
+      }
+
+      .categoryTitle {
+        width: 100%;
+        font-size: 1.2rem;
+      }
+
+      .logoRow {
+        padding-left: 0;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionContainer {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+
+    .studentHeader {
+      h2 {
+        font-size: 3rem;
+
+        .IT {
+          font-size: 6rem;
+        }
+      }
+    }
+
+    .skill {
+      padding: 1.5em 1em;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: min(23rem, 90%);
+      box-sizing: border-box;
+      margin: 0 auto;
+
+      .title {
+        font-size: 2.5rem;
+      }
+
+      .skillLine {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100%;
+
+        .categoryTitle {
+          text-align: center;
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      .logoRow {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 100%;
+        justify-items: center;
+
+        .logoWrapper {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}

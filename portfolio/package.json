@@ -15,10 +15,14 @@
     "sass": "^1.89.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "babel-loader": "^10.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
     "typescript": "^5"

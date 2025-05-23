@@ -1,0 +1,50 @@
+@use "@/styles/variables" as *;
+
+.title {
+  font-weight: 200;
+  font-family: $font-primary;
+  font-size: 5rem;
+  color: $text-color-medium;
+  text-align: center;
+  margin: 0;
+}
+
+.projectItemContainer {
+  background-color: $background-color-primary;
+  overflow: hidden;
+  position: relative;
+
+  .textBackground {
+    font-size: 12rem;
+    font-weight: lighter;
+    text-align: center;
+    position: absolute;
+    font-style: italic;
+    letter-spacing: 1.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); // Centrer parfaitement le texte
+    z-index: 0;
+    text-transform: uppercase;
+    font-family: $font-secondary;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba($text-color-light, 0.3);
+    pointer-events: none; // Pour éviter d'interagir par erreur
+  }
+}
+
+//responsive
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+}

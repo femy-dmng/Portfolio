@@ -1,11 +1,23 @@
 //Couleurs
-$background-color-primary: #FF70BC;
-$background-color-secondary: #FFFFFF;
-$background-color-tertiary: #4A4747;
-$text-color-light:#FFFFFF;
-$text-color-dark: #000000;
+$background-color-primary: #fab3d9;
+$background-color-secondary: #ffffff;
+$background-color-tertiary: #4a4747;
+$text-color-light: #ffffff;
+$text-color-dark: #4a4747;
+$text-color-medium: #fab3d9;
+$color-hover-light: #f1bed9;
+$color-hover-dark: #4a4747;
 
 //Espacements
-
+$gap: 20px;
+$responsive-inline-item-spacing-768px: 35px;
 
 //Taille de texte
+$font-size-navbar-title: 1.6rem;
+$font-size-paragraphe: 1.6rem;
+
+//Police
+$font-primary: "Kalnia", serif;
+$font-secondary: "Bayon", sans-serif;
+$font-tertiary: "Cousine", monospace;
+$font-backgroung-primary: "Cherish", cursive;
